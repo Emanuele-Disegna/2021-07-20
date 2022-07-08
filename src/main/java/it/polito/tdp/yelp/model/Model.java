@@ -68,8 +68,8 @@ public class Model {
 		return res;
 	}
 	
-	public Collection<User> getUsersInGrafo(){
-		return idMap.values();
+	public List<User> getUsersInGrafo(){
+		return new ArrayList<User>(idMap.values());
 	}
 	
 	public Graph<User, DefaultWeightedEdge> getGrafo() {
